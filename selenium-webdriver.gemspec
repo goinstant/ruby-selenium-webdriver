@@ -6,4 +6,5 @@ Gem::Specification.new do |s|
   s.authors     = ["Google"]
   s.files       = ["lib/selenium-webdriver.rb"]
   s.homepage    = 'http://rubygems.org/gems/selenium-webdriver'
+  s.add_dependency "childprocess"
 end
