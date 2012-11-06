@@ -14,16 +14,6 @@ module Selenium
     Dimension = Struct.new(:width, :height)
     Location  = Struct.new(:latitude, :longitude, :altitude)
 
-    autoload :Android, 'selenium/webdriver/android'
-    autoload :Chrome,  'selenium/webdriver/chrome'
-    autoload :Firefox, 'selenium/webdriver/firefox'
-    autoload :IE,      'selenium/webdriver/ie'
-    autoload :IPhone,  'selenium/webdriver/iphone'
-    autoload :Opera,   'selenium/webdriver/opera'
-    autoload :Remote,  'selenium/webdriver/remote'
-    autoload :Safari,  'selenium/webdriver/safari'
-    autoload :Support, 'selenium/webdriver/support'
-
     # @api private
 
     def self.root
@@ -67,3 +57,13 @@ module Selenium
 
   end # WebDriver
 end # Selenium
+
+require 'selenium/webdriver/remote'
+require 'selenium/webdriver/android'
+require 'selenium/webdriver/chrome'
+require 'selenium/webdriver/firefox'
+require 'selenium/webdriver/ie'
+require 'selenium/webdriver/iphone'
+require 'selenium/webdriver/opera'
+require 'selenium/webdriver/safari'
+require 'selenium/webdriver/support'
