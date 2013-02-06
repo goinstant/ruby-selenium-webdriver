@@ -15,8 +15,8 @@ module Selenium
           @server = Server.new(port, timeout)
           @server.start
 
-          @safari = Browser.new
-          @safari.start(prepare_connect_file)
+          @browser = Browser.new
+          @browser.start(prepare_connect_file)
 
           @server.wait_for_connection
 
@@ -27,7 +27,7 @@ module Selenium
           super
 
           @server.stop
-          @safari.stop
+          @browser.stop
         end
 
         def driver_extensions
