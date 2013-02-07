@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'selenium-webdriver'
-  s.version     = '2.26.0'
+  s.version     = '2.29.0'
   s.summary     = ""
   s.description = "webdriver"
   s.authors     = ["Google"]
